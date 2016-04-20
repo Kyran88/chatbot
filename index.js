@@ -4,7 +4,8 @@
 var messages = [], //array that hold the record of each string in chat
   lastUserMessage = "", //keeps track of the most recent input string from the user
   botMessage = "", //var keeps track of what the chatbot is going to say
-  botName = 'Kyran' //name of the chatbot
+  botName = 'Kyran', //name of the chatbot
+  UserName = 'User'
 
 //edit this function to change what the chatbot says
 function chatbotResponse() {
@@ -46,7 +47,7 @@ function newEntry() {
     document.getElementById("chatbox").value = "";
     document.getElementById("chatbox").placeholder = "";
     //adds the value of the chatbox to the message array
-    messages.push(lastUserMessage);
+    messages.push("<b>" + UserName + ":</b> " + lastUserMessage);
     //takes the return value from chatbotResponse() and outputs it
     chatbotResponse()
       //add the chatbot's name and message to the array messages
