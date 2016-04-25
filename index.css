@@ -64,4 +64,12 @@ body {height:3000px}
   padding: 4px 6px !important;
   border-radius: 4px;
   margin-bottom: 20px;
+  overflow:  auto;
+  max-height:  360px !important;
+}
+
+#chat-log {
+  min-height: 360px;
+  max-height:  360px !important;
+  overflow-y: auto;
 }
